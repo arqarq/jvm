@@ -17,18 +17,18 @@ public class TaskManager {
     }
 
     public synchronized Task getNextTask() {
-        //should do:
-        return tasks.get(0);
+//        return tasks.get(0);
 
-//        Task cust = null;
-//
-//        synchronized (this){
-//            if(tasks.size() > 0){
-//                cust  = tasks.remove(0);
-//            }
-//        }
-//
-//        return cust;
+        //should do:
+        Task cust = null;
+
+        synchronized (this) {
+            if (tasks.size() > 0) {
+                cust = tasks.remove(0);
+            }
+        }
+
+        return cust;
     }
 
     public void howManyTask() {
