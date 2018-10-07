@@ -26,7 +26,6 @@ public class SoftMemoryLeak {
             }
             cm.howManyTask();
             System.out.println("Available memory: " + Runtime.getRuntime().freeMemory() / 1024 + "k");
-
         }
     }
 }
