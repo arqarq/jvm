@@ -67,6 +67,4 @@ public class BenchmarkTest {
             outMap = new HashMap<>();
         }
     }
-
-
 }
