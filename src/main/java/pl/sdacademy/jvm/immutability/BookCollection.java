@@ -15,11 +15,15 @@ public class BookCollection {
             if (book.getTitle().equals(title)) {
                 return book;
             }
-            throw new RuntimeException("Nie znaleziono książki!");
+        throw new RuntimeException("Nie znaleziono książki!");
     }
 
     void printAllBooks() {
-
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Book book : books) {
+            stringBuilder.append(book.getTitle()).append("\t");
+        }
+        System.out.println(stringBuilder.toString());
     }
 
     @Override

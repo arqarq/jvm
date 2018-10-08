@@ -8,4 +8,9 @@ class Price {
         this.value = value;
         this.currency = currency;
     }
+
+    @Override
+    public String toString() {
+        return value + currency.toString();
+    }
 }
